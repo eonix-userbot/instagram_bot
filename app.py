@@ -18,7 +18,7 @@ bot = Bot()
 
 # Login using bot
 try:
-    bot.login(username=username, password=password)
+    bot.login(username=levigotaeri, password=LEVIxAERI<3)
 except Exception as e:
     print(f"Error during login: {e}")
     exit()
@@ -59,7 +59,7 @@ def send_birthday_message():
             time.sleep(200)  # If rate limited, sleep for 5 minutes
 
 # Schedule the job to run every day at 12:00 AM (midnight)
-schedule.every().day.at("18:32").do(send_birthday_message)
+schedule.every().day.at("16:33").do(send_birthday_message)
 
 while True:
     schedule.run_pending()
